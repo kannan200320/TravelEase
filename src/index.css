@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cherry: #CC313D;
+  --color-cherry-hover: #b52632;
+  --color-cherry-dark: #961e28;
+  --color-bubblegum: #F7C5CC;
+  --color-bubblegum-light: #fff5f6;
+  --color-bubblegum-border: #f8c9d0;
+
+  /* Remap sky, blue, and indigo palettes to Cherry Red & Bubblegum Pink */
+  --color-sky-50: #fff5f6;
+  --color-sky-100: #fde8ea;
+  --color-sky-200: #F7C5CC;
+  --color-sky-300: #F7C5CC;
+  --color-sky-400: #e88692;
+  --color-sky-500: #db5462;
+  --color-sky-600: #CC313D;
+  --color-sky-700: #b52632;
+  --color-sky-800: #961e28;
+  --color-sky-900: #7a1b23;
+  --color-sky-950: #44090e;
+
+  --color-indigo-50: #fff5f6;
+  --color-indigo-100: #fde8ea;
+  --color-indigo-200: #F7C5CC;
+  --color-indigo-300: #F7C5CC;
+  --color-indigo-500: #db5462;
+  --color-indigo-600: #CC313D;
+  --color-indigo-700: #b52632;
+  --color-indigo-800: #961e28;
+  --color-indigo-900: #7a1b23;
+  --color-indigo-950: #44090e;
+
+  --color-blue-50: #fff5f6;
+  --color-blue-100: #fde8ea;
+  --color-blue-200: #F7C5CC;
+  --color-blue-300: #F7C5CC;
+  --color-blue-500: #db5462;
+  --color-blue-600: #CC313D;
+  --color-blue-700: #b52632;
+  --color-blue-800: #961e28;
+  --color-blue-900: #7a1b23;
+}
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    --font-serif: 'Playfair Display', Georgia, Cambria, 'Times New Roman', Times, serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: var(--font-serif);
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f5f9;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+  }
+}
+
+@media print {
+  header, footer, .no-print, nav {
+    display: none !important;
+  }
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .print-only-modal {
+    box-shadow: none !important;
+    border: 1px solid #ccc !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
