@@ -234,7 +234,7 @@ export const AuthModal = () => {
             <form onSubmit={handleSignInSubmit} className="space-y-3 sm:space-y-4">
               <div>
                 <label className="block text-xs font-bold text-slate-700 mb-1">
-                  Email Address (name@gmail.com)
+                  Email Address
                 </label>
                 <div className="relative">
                   <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
@@ -323,7 +323,7 @@ export const AuthModal = () => {
             <form onSubmit={handleRegisterSubmit} className="space-y-3">
               <div>
                 <label className="block text-xs font-bold text-slate-700 mb-1">
-                  Full Name (letters only, min 3)
+                  Full Name
                 </label>
                 <div className="relative">
                   <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
@@ -343,7 +343,7 @@ export const AuthModal = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3">
                 <div>
                   <label className="block text-xs font-bold text-slate-700 mb-1">
-                    Email (name@gmail.com)
+                    Email Address
                   </label>
                   <div className="relative">
                     <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
@@ -361,7 +361,7 @@ export const AuthModal = () => {
 
                 <div>
                   <label className="block text-xs font-bold text-slate-700 mb-1">
-                    Mobile (10 digits)
+                    Mobile Number
                   </label>
                   <div className="relative">
                     <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
@@ -373,7 +373,7 @@ export const AuthModal = () => {
                       onChange={(e) => setRegPhone(e.target.value.replace(/\D/g, '').slice(0, 10))}
                       placeholder="9876543210"
                       maxLength={10}
-                      className="w-full pl-10 pr-3 py-2 sm:py-2.5 text-xs sm:text-sm rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-[#CC313D]/20 focus:border-[#CC313D] transition-all text-slate-900 placeholder:text-slate-400"
+                      className="w-full pl-10 pr-3 py-2 sm:py-2.5 text-xs sm:text-sm rounded-xl border border-slate-200 focus:outline-none focus:border-[#CC313D] transition-all text-slate-900 placeholder:text-slate-400"
                     />
                   </div>
                 </div>
@@ -382,7 +382,7 @@ export const AuthModal = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3">
                 <div>
                   <label className="block text-xs font-bold text-slate-700 mb-1">
-                    Create Password (6+ chars)
+                    Create Password
                   </label>
                   <div className="relative">
                     <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
